@@ -24,7 +24,7 @@ WORKDIR /app
 COPY --from=build /app/target/discovery-server-1.0-SNAPSHOT.jar app.jar
 
 # Exponer el puerto en el que la aplicación escucha
-EXPOSE 8080
+EXPOSE 8761
 
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]
